@@ -1,0 +1,219 @@
+  @font-face {
+    font-family: 'DMSans';
+    src: url(../fonts/DMSans-Regular.ttf) format('truetype');
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: 'DMSans';
+    src: url(../fonts/DMSans-Medium.ttf) format('truetype');
+    font-style: normal;
+    font-weight: 500;
+  }
+  @font-face {
+    font-family: 'DMSans';
+    src: url(../fonts/DMSans-MediumItalic.ttf) format('truetype');
+    font-style: italic;
+    font-weight: 500;
+  }
+
+/* GENERALES */
+  
+body {
+    background-color: #f5f5f5;
+    font-family: 'DMSans', sans-serif;
+}
+
+#main {
+
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'DMSans', sans-serif;
+    font-weight: 500;
+    line-height: 1em;
+    margin: 0;
+    letter-spacing: -1px;
+}
+
+h1 {
+    font-size: 52px;
+    margin-bottom: 25px;
+}
+
+h2 {
+    font-size: 34px;
+    font-weight: 900;
+    letter-spacing: -2px;
+    margin-bottom: 25px;
+}
+
+h3 {
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: -1px;
+    margin-bottom: 25px;
+    line-height: .9em;
+}
+
+p {
+    line-height: 1.1em;
+}
+
+#bento {
+    max-width: 1012px;
+    margin: 0 auto;
+}
+
+.grid-container {
+    display: grid;
+    max-width: 100%;
+    grid-template-areas: 
+    "item-7 item-1 item-1 item-4"
+    "item-7 item-1 item-1 item-4"
+    "item-7 item-1 item-1 item-4"
+    "item-7 item-1 item-1 item-4"
+    "item-7 item-2 item-3 item-4"
+    "item-8 item-2 item-3 item-4"
+    "item-8 item-2 item-3 item-4"
+    "item-8 item-6 item-5 item-5"
+    "item-8 item-6 item-5 item-5"
+    "item-8 item-6 item-5 item-5";
+    grid-auto-rows: minmax(50px, auto);
+    grid-auto-columns: minmax(50px, auto);
+    gap: 30px;
+}
+
+/* BLOQUES */
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.p-30 {
+    padding: 30px;
+}
+
+.p-20 {
+    padding: 20px;
+}
+
+.grid-item img {
+    max-width: 100%;
+}
+
+.block-yellow {
+    background-color: #ffcc6a;
+}
+
+.block-purple {
+    background-color: #7552dc;
+    color: #fff;
+}
+
+.block-purple span {
+    color: #ffcc6a;
+}
+
+.block-light-yellow {
+    background-color: #faeee2;
+}
+
+.block-light-yellow  em {
+    font-style: italic;
+    color: #7552dc;
+}
+
+.block-lavender {
+    background-color: #dcd1fc;
+}
+
+.block-white {
+    background-color: #ffffff;
+}
+
+
+/* GRID AREAS */
+
+.item-1 {
+    grid-area: item-1;
+    text-align: center;
+    align-items: center;
+}
+
+.item-1 img {
+    width: 100%;
+    max-width: 180px;
+    display: block;
+}
+
+.item-1 p {
+    color: #d5bbff;
+    margin: 5px 0;
+}
+
+.item-2 {
+    grid-area: item-2;
+    aspect-ratio: 1;
+}
+
+.item-2 img {
+    width: 270px;
+    max-width: initial;
+    margin-bottom: 25px;
+}
+
+.item-3 {
+    grid-area: item-3;
+    aspect-ratio: 1;
+}
+.item-3 img {
+    margin-bottom: -80px;
+}
+
+.item-4 {
+    grid-area: item-4;
+}
+
+.item-4 img {
+    width: 300px;
+    max-width: initial;
+}
+
+.item-5 {
+    grid-area: item-5;
+    flex-direction: row;
+    align-items: center;
+}
+
+.item-5 img {
+    width:200px;
+}
+
+.item-6 {
+    grid-area: item-6;
+    aspect-ratio: 1;
+}
+
+.item-6 h2 {
+    font-size: 50px;
+    margin-bottom: 0px;
+}
+
+.item-6 img {
+    max-width: 150px;
+    margin-top: 15px;
+}
+
+.item-7 {
+    grid-area: item-7;
+}
+
+.item-8 {
+    grid-area: item-8;
+}
